@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unix Timestamp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script2.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <div id="timestampContainer">
+            <div class="userInputTimestamp">
+                <h1>The Current Epoch Unix Timestamp</h1>
+
+                <div class="inputContainer">
+                    <label for="input">Enter a Timestamp</label>
+                    <input type="number" placeholder="1725628626" id="input">
+                    <p>Supports Unix timestamps in Seconds, and milliseconds.</p>
+                </div>
+
+                <div class="convertBtn">
+                    <button>Convert &rarr;</button>
+                </div>
+            </div>
+
+            <div class="liveTimestampContainer">                
+                <div class="unixEpoch">
+                    <h2 class="live-timestamp"></h2>
+                    <h3>Seconds since Jan 01 1970. (UTC)</h3>
+                    <p class="live-time"></p>
+                </div>
+
+                <div class="copyButton">
+                    <button>Copy</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="output display-none">
+            <div id="table-container">
+                <table class="outputTable">
+                    <tr>
+                        <th>Format</th>
+                        <td class="table-data"></td>
+                    </tr>
+                    <tr>
+                        <th>GMT</th>
+                        <td class="table-data"></td>
+                    </tr>
+                    <tr>
+                        <th>Your Time Zone</th>
+                        <td class="table-data"></td>
+                    </tr>
+                    <tr>
+                        <th>Relative</th>
+                        <td class="table-data"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+
+        <section class="dateAndTimeContainer">
+            <div class="userInput2">
+                <h3>Enter a Date and Time</h3>
+
+                <div class="userInput2-fields">
+                    <div>
+                        <label for="year">Year</label>
+                        <input type="number" id="year">
+                    </div>
+                    <div>
+                        <label for="month">Month</label>
+                        <input type="number" id="month">
+                    </div>
+                    <div>
+                        <label for="day">Day</label>
+                        <input type="number" id="day">
+                    </div>
+                    <div>
+                        <label for="hour">Hour <small>(24 Hour)</small> </label>
+                        <input type="number" id="hour">
+                    </div>
+                    <div>
+                        <label for="minutes">Minutes</label>
+                        <input type="number" id="minutes">
+                    </div>
+                    <div>
+                        <label for="seconds">Seconds</label>
+                        <input type="number" id="seconds">
+                    </div>
+                </div>
+
+                <div class="warning display-none">
+                    <p></p>
+                </div>
+
+                <div class="convertBtn2">
+                    <button>Convert &rarr;</button>
+                </div>
+            </div>
+
+            <div class="output-2 display-none">
+                <div id="table-container">
+                    <table class="outputTable">
+                        <tr>
+                            <th>Unix Timestamp</th>
+                            <td class="table2-data"></td>
+                        </tr>
+                        <tr>
+                            <th>GMT</th>
+                            <td class="table2-data"></td>
+                        </tr>
+                        <tr>
+                            <th>Your Time Zone</th>
+                            <td class="table2-data"></td>
+                        </tr>
+                        <tr>
+                            <th>Relative</th>
+                            <td class="table2-data"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
